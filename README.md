@@ -34,5 +34,5 @@ This project predicts laptop prices using regression analysis and provides an in
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/laptop-price-prediction.git
-cd laptop-price-prediction
+git clone https://github.com/RiturajS12/laptop_price_prediction.git
+cd laptop_price_prediction
