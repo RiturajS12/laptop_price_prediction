@@ -1,0 +1,579 @@
+@font-face {
+    font-family: 'Quantify';
+    src: url('/static/Quantify.ttf') format('woff2'),
+         url('/static/Quantify.ttf') format('woff');
+        font-size: small;
+        font-weight: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    overflow:auto;
+    position: relative; /* Ensure proper stacking context */
+    flex-direction: column;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#background-scene {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+nav {
+    background: #44444400;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    /* width: 60px; */
+    /* height: 100vh; */
+    top: 200px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #555;
+    text-align: center;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a:hover {
+    background: #8c9eff;
+    width: 55px;
+    height: 55px; 
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+}
+
+.section {
+    min-height: 100vh;
+    padding: 2em;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-height: 100px;
+    z-index: 0;
+}
+
+header {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    text-decoration: overline;
+    z-index: -1;
+    color: #f4f4f4;
+}
+
+.card {
+    width: 45%;
+    background: #f4f4f449;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 520px;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card img:hover{
+    position: relative;
+    top: -5px;
+}
+
+.card.left {
+    margin-right: auto;
+    position: relative;
+    top: 15px;
+}
+
+.card.right {
+    margin-left: auto;
+    position: relative;
+    top: -540px;
+}
+
+.explore-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f449;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    margin-top: 2em;
+    position: relative;
+    top: -555px;
+}
+
+.explore-button a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.explore-button a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.explore-button:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-family: 'Quantify';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 0;
+}
+
+.project-card {
+    background: #f4f4f467;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 0;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+.card-content h2:hover{
+    font-family: 'Quantify';
+    text-decoration: underline;
+}
+
+.card-image {
+    width: 40%;
+    margin-right: 1em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-image:hover {
+    transform: scale(1.05);
+}
+
+.card-description {
+    width: 60%;
+}
+
+.card-description h2 {
+    margin-top: 0;
+}
+
+.card-description p {
+    margin: 1em 0;
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.project-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.project-description h2 {
+    margin-bottom: 0.5em;
+}
+
+.project-description p {
+    margin: 0;
+}
+#about {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.about-card {
+    background: #f4f4f489;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    z-index: 0;
+}
+
+.about-card .card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-card .card-content h2:hover{
+    font-family: 'Quantify';
+}
+
+.about-card .card-description {
+    flex: 1;
+    padding: 1em;
+    text-align: left;
+}
+
+.about-card .card-image img {
+    padding: 1em;
+    width: 100%;
+    height: 570px;
+    max-width: 570px;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Make the section take full viewport height */
+    width: 100%;
+    flex-direction: column; /* Ensure that the heading and paragraph are stacked vertically */
+    position: relative; /* Ensure proper stacking */
+}
+
+.thanks-card {
+    background: #f4f4f475;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thanks h2, .thanks p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+@media (max-width: 1163px) {
+    /* Adjustments for tablets and mobile devices */
+    nav {
+        width: 50px;
+        position: absolute; /* Make nav overlay instead of fixed */
+        top: 0;
+        left: 130px;
+        padding: 0.1em;
+        flex-direction: row; /* Align nav items horizontally */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    nav ul {
+        flex-direction: row; /* Align nav items horizontally */
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .card img {
+        height: 250px; /* Adjust image size in cards */
+    }
+
+    .about-card .card-image img {
+        height: 300px; /* Adjust image height */
+    }
+
+    .thanks {
+        height: auto; /* Allow thanks section to adjust height based on content */
+        padding: 1em; /* Add padding for better spacing */
+    }
+
+    .thanks-card {
+        width: 90%;
+        max-width: 100%; /* Ensure card doesn't overflow on smaller screens */
+        padding: 1em; /* Add padding for better spacing */
+    }
+
+    .thanks h2 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    .thanks p {
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+@media (max-width: 792px) {
+    /* Adjustments for small mobile devices */
+    .card.left{
+        position: relative;
+        left: -70px;
+    }
+    nav {
+        width: 40px;
+    }
+
+    nav ul li {
+        margin: 3px;
+    }
+
+    .card img {
+        height: 200px; /* Further reduce image size in cards */
+    }
+
+    .about-card .card-image img {
+        height: 250px; /* Further adjust image height */
+    }
+
+    .thanks h2 {
+        font-size: 1.2em; /* Further adjust font size */
+    }
+
+    .thanks p {
+        font-size: 0.9em; /* Further adjust font size */
+    }
+}
+@media (max-width: 618px){
+    .card {
+        min-height: 570px;
+    }
+    .card.left{
+        top: 60px;
+    }
+}
+@media (max-width: 518px){
+    .card {
+        min-height: 600px;
+    }
+    .card.left{
+        top: 90px;
+    }
+    button{
+        left: -30px;
+    }
+    .project-card{
+        position: relative;
+        top: 60px;
+        left: -90px;
+        width: 120%;
+    }
+    .about-card{
+        position: relative;
+        top: 20px;
+        left: -80px;
+        width: 900px;
+        max-width: 1900px;
+    }
+}
+.socails {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -0.9em;
+    fill: #03a9f4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -0.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -0.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03a9f4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+  
+  

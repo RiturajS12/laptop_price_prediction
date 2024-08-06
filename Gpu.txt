@@ -1,0 +1,110 @@
+                                GPU  GPU_Numeric
+0     Intel Iris Plus Graphics 640           1
+1           Intel HD Graphics 6000           2
+2              Intel HD Graphics 620           3
+3                    AMD Radeon Pro 455           4
+4     Intel Iris Plus Graphics 650           5
+5                     AMD Radeon R5           6
+6          Intel Iris Pro Graphics           7
+7             Nvidia GeForce MX150           8
+8              Intel UHD Graphics 620           9
+9              Intel HD Graphics 520          10
+10                   AMD Radeon Pro 555          11
+11                AMD Radeon R5 M430          12
+12                  Intel HD Graphics 615         13
+13                AMD Radeon Pro 560         14
+14                   Nvidia GeForce 940MX         15
+15                  Intel HD Graphics 400         16
+16                   Nvidia GeForce GTX 1050         17
+17                       AMD Radeon R2          18
+18                    AMD Radeon 530          19
+19                Nvidia GeForce 930MX          20
+20                   Intel HD Graphics          21
+21                   Intel HD Graphics 500         22
+22                Nvidia GeForce 930MX          23
+23                Nvidia GeForce GTX 1060         24
+24                 Nvidia GeForce 150MX         25
+25             Intel Iris Graphics 540          26
+26                  AMD Radeon RX 580          27
+27                Nvidia GeForce 920MX          28
+28               AMD Radeon R4 Graphics          29
+29                     AMD Radeon 520          30
+30              Nvidia GeForce GTX 1070         31
+31            Nvidia GeForce GTX 1050 Ti          32
+32               Nvidia GeForce MX130          33
+33                     AMD R4 Graphics          34
+34              Nvidia GeForce GTX 940MX          35
+35                   AMD Radeon RX 560          36
+36                   Nvidia GeForce 920M          37
+37                 AMD Radeon R7 M445          38
+38                   AMD Radeon RX 550          39
+39               Nvidia GeForce GTX 1050M         40
+40                Intel HD Graphics 515          41
+41                 AMD Radeon R5 M420          42
+42                  Intel HD Graphics 505         43
+43                 Nvidia GTX 980 SLI          44
+44                     AMD R17M-M1-70          45
+45               Nvidia GeForce GTX 1080         46
+46                Nvidia Quadro M1200          47
+47                 Nvidia GeForce 920MX         48
+48               Nvidia GeForce GTX 950M         49
+49                 AMD FirePro W4190M          50
+50               Nvidia GeForce GTX 980M         51
+51            Intel Iris Graphics 550          52
+52                Nvidia GeForce 930M          53
+53                Intel HD Graphics 630          54
+54              AMD Radeon R5 430          55
+55              Nvidia GeForce GTX 940M          56
+56                Intel HD Graphics 510          57
+57                Intel HD Graphics 405          58
+58               AMD Radeon RX 540          59
+59              Nvidia GeForce GT 940MX          60
+60               AMD FirePro W5130M          61
+61              Nvidia Quadro M2200M          62
+62                   AMD Radeon R4          63
+63              Nvidia Quadro M620          64
+64               AMD Radeon R7 M460          65
+65                Intel HD Graphics 530          66
+66              Nvidia GeForce GTX 965M          67
+67              Nvidia GeForce GTX1080          68
+68              Nvidia GeForce GTX1050 Ti          69
+69              Nvidia GeForce GTX 960M          70
+70              AMD Radeon R2 Graphics          71
+71              Nvidia Quadro M620M          72
+72              Nvidia GeForce GTX 970M          73
+73              Nvidia GeForce GTX 960          74
+74                Intel Graphics 620          75
+75               AMD Radeon R5 520          76
+76               AMD Radeon R7 M440          77
+77                   AMD Radeon R7          78
+78              Nvidia Quadro M520M          79
+79              Nvidia Quadro M2200          80
+80              Nvidia Quadro M2000M          81
+81                Intel HD Graphics 540          82
+82              Nvidia Quadro M1000M          83
+83                AMD Radeon 540          84
+84              Nvidia GeForce GTX 1070M          85
+85              Nvidia GeForce GTX1060          86
+86              Intel HD Graphics 5300          87
+87              AMD Radeon R5 M420X          88
+88             AMD Radeon R7 Graphics          89
+89                Nvidia GeForce 920          90
+90                Nvidia GeForce 940M          91
+91              Nvidia GeForce GTX 930MX          92
+92              AMD Radeon R7 M465          93
+93                   AMD Radeon R3          94
+94              Nvidia GeForce GTX 1050Ti          95
+95              AMD Radeon R7 M365X          96
+96              AMD Radeon R9 M385          97
+97              Intel HD Graphics 620          98
+98              Nvidia Quadro 3000M          99
+99              Nvidia GeForce GTX 980          100
+100              AMD Radeon R5 M330          101
+101              AMD FirePro W4190M          102
+102              AMD FirePro W6150M          103
+103             AMD Radeon R5 M315          104
+104              Nvidia Quadro M500M          105
+105              AMD Radeon R7 M360          106
+106             Nvidia Quadro M3000M          107
+107              Nvidia GeForce 960M          108
+108              ARM Mali T860 MP4          109

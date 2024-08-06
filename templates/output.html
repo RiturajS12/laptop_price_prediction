@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto; /* Prevent scrolling */
+            font-family: Arial, sans-serif;
+        }
+        #background-scene {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.296);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1; /* Ensure it’s above the background */
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-display {
+            padding: 10px;
+            background-color: black;
+            color: aliceblue;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .result {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        a{
+            color: white;
+            background-color: black;
+            padding:1em;
+            font-size: 15px;
+            border: 5px white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+            background-color: white;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
+</head>
+<body>
+    <!-- Spline viewer as background -->
+    <spline-viewer id="background-scene" url="https://prod.spline.design/YpB-yqLMWbXZ1-AI/scene.splinecode"></spline-viewer>
+
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="form-group">
+            <label for="screenSize">Screen Size (Inches):</label>
+            <div class="input-display">{{ screen_size }}</div>
+        </div>
+        <div class="form-group">
+            <label for="ram">RAM (GB):</label>
+            <div class="input-display">{{ ram }}</div>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (kg):</label>
+            <div class="input-display">{{ weight }}</div>
+        </div>
+        <div class="form-group">
+            <label for="processorSpeed">Processor Speed (GHz):</label>
+            <div class="input-display">{{ processor_speed }}</div>
+        </div>
+        <div class="form-group">
+            <label for="width">Width (inches):</label>
+            <div class="input-display">{{ width }}</div>
+        </div>
+        <div class="form-group">
+            <label for="height">Height (inches):</label>
+            <div class="input-display">{{ height }}</div>
+        </div>
+        <div class="form-group">
+            <label for="storageCapacity">Storage Capacity (GB):</label>
+            <div class="input-display">{{ storage_capacity }}</div>
+        </div>
+        <div class="form-group">
+            <label for="gpuCode">GPU Numeric Code:</label>
+            <div class="input-display">{{ gpu_code }}</div>
+        </div>
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <div class="input-display">{{ company }}</div>
+        </div>
+        <div class="form-group">
+            <label for="type">Type:</label>
+            <div class="input-display">{{ type }}</div>
+        </div>
+        <div class="form-group">
+            <label for="os">Operating System:</label>
+            <div class="input-display">{{ os }}</div>
+        </div>
+        <div class="form-group">
+            <label for="generation">Processor Generation:</label>
+            <div class="input-display">{{ generation }}</div>
+        </div>
+        <div class="form-group">
+            <label for="series">Processor Series:</label>
+            <div class="input-display">{{ series }}</div>
+        </div>
+        <div class="result">
+            <h2>Predicted Price: ${{ output }}</h2>
+        </div>
+        <a href="/form" class="button">Go Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laptop/Computer Information Form</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+    }
+
+    #background-scene {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-container {
+        position: relative;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.296);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            background-color: black;
+            color: aliceblue;
+            box-sizing: border-box;
+    }
+    textarea {
+            resize: vertical;
+    }
+    button{
+            background-color: #f4f4f449;
+            color: white;
+    }
+    button a:hover{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.5/build/spline-viewer.js"></script>
+</head>
+<body>
+    <spline-viewer id="background-scene" url="https://prod.spline.design/YpB-yqLMWbXZ1-AI/scene.splinecode"></spline-viewer>
+
+    <div class="form-container">
+        <h1>Laptop/Computer Information Form</h1>
+        
+        <form action="/submit_form" method="post">
+            <div class="form-group">
+                <label for="screenSize">Screen Size (Inches):</label>
+                <input type="text" id="screenSize" name="screenSize">
+            </div>
+            <div class="form-group">
+                <label for="ram">RAM (GB):</label>
+                <input type="text" id="ram" name="ram">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="text" id="weight" name="weight">
+            </div>
+            <div class="form-group">
+                <label for="processorSpeed">Processor Speed (GHz):</label>
+                <input type="text" id="processorSpeed" name="processorSpeed">
+            </div>
+            <div class="form-group">
+                <label for="width">Width (inches):</label>
+                <input type="text" id="width" name="width">
+            </div>
+            <div class="form-group">
+                <label for="height">Height (inches):</label>
+                <input type="text" id="height" name="height">
+            </div>
+            <div class="form-group">
+                <label for="storageCapacity">Storage Capacity (GB):</label>
+                <input type="text" id="storageCapacity" name="storageCapacity">
+            </div>
+            <div class="form-group">
+                <label for="gpuCode">GPU Numeric Code:</label>
+                <input type="text" id="gpuCode" name="gpuCode">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company:</label>
+                <select id="company" name="company">
+                    <option value="">Select Company</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Chuwi">Chuwi</option>
+                    <option value="Dell">Dell</option>
+                    <option value="Fujitsu">Fujitsu</option>
+                    <option value="Google">Google</option>
+                    <option value="HP">HP</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="LG">LG</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="MSI">MSI</option>
+                    <option value="Mediacom">Mediacom</option>
+                    <option value="Microsoft">Microsoft</option>
+                    <option value="Razer">Razer</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Toshiba">Toshiba</option>
+                    <option value="Vero">Vero</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="">Select Type</option>
+                    <option value="2 in 1 Convertible">2 in 1 Convertible</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Netbook">Netbook</option>
+                    <option value="Notebook">Notebook</option>
+                    <option value="Ultrabook">Ultrabook</option>
+                    <option value="Workstation">Workstation</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="os">Operating System:</label>
+                <select id="os" name="os">
+                    <option value="">Select Operating System</option>
+                    <option value="Android">Android</option>
+                    <option value="Chrome OS">Chrome OS</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Mac OS X">Mac OS X</option>
+                    <option value="No OS">No OS</option>
+                    <option value="Windows 10">Windows 10</option>
+                    <option value="Windows 10 S">Windows 10 S</option>
+                    <option value="Windows 7">Windows 7</option>
+                    <option value="macOS">macOS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="generation">Processor Generation:</label>
+                <select id="generation" name="generation">
+                    <option value="">Select Generation</option>
+                    <option value="Generation 1">Generation 1</option>
+                    <option value="Generation 3">Generation 3</option>
+                    <option value="Generation 5">Generation 5</option>
+                    <option value="Generation 7">Generation 7</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="series">Processor Series:</label>
+                <select id="series" name="series">
+                    <option value="">Select Series</option>
+                    <option value="Series 0">Series 0</option>
+                    <option value="Series A10">Series A10</option>
+                    <option value="Series A12">Series A12</option>
+                    <option value="Series A4">Series A4</option>
+                    <option value="Series A6">Series A6</option>
+                    <option value="Series A72">Series A72</option>
+                    <option value="Series A8">Series A8</option>
+                    <option value="Series A9">Series A9</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>
