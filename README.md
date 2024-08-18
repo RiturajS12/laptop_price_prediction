@@ -23,7 +23,7 @@ This project predicts laptop prices using regression analysis and provides an in
   - Jupyter Notebook (for model development)
   - HTML/CSS (for front-end design)
  
-    
+  
 ## Installation
 
 ### Prerequisites
